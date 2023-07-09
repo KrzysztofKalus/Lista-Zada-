@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: Lato, sans-serif;
+    color: #222;
+    width: 90%;
+    background-color: #f1f3f2;
+    margin: 20px;
+}
+
+.title {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.header {
+    margin: 0px;
+}
+
+.flex {
+    max-width: 600px;
+}
+
+.flex__item {
+    padding: 10px;
+    background: white;
+    margin: 2px;
+}
