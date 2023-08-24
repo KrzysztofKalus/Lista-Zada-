@@ -72,7 +72,3 @@ html {
 .list__item--remove {
     grid-column-start: 3;
 }
-
-.js-tasks {
-    grid-column-start: 2;
-}
