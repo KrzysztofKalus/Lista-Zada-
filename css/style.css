@@ -11,7 +11,7 @@ html {
     color: #222;
     width: 90%;
     background-color: #f1f3f2;
-    margin: 20px;
+    margin: auto;
 }
 
 .title {
@@ -31,5 +31,48 @@ html {
 .flex__item {
     padding: 10px;
     background: white;
+    margin: 4px;
+    max-width: 600px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100px;
+}
+
+.form__item {
+    flex: 1 0 0;
     margin: 2px;
 }
+
+.form__button {
+    color: white;
+    background-color: teal;
+    border: 2px;
+    flex-grow: 1;    
+}
+
+.form__input {
+    flex-grow: 2;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {}
+
+.list__item {
+    list-style-type: none;
+    display: flex;
+}
+
+.list__item--done {
+}
+
+.list__item--remove {
+    flex-grow: 2;
+}
+
