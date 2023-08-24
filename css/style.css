@@ -57,22 +57,22 @@ html {
     flex-grow: 2;
 }
 
-.taskList {
-    display: flex;
-    flex-direction: column;
-}
-
 .list {}
 
 .list__item {
     list-style-type: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
 }
 
 .list__item--done {
+    grid-column-start: 1;
 }
 
 .list__item--remove {
-    flex-grow: 2;
+    grid-column-start: 3;
 }
 
+.js-tasks {
+    grid-column-start: 2;
+}
