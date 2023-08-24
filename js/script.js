@@ -1,4 +1,9 @@
 {
+    const welcome = () => {
+        console.log("Hello!");
+    }
+    welcome();
+
     const tasks = [
         {
             content: "wyjść z psem",
@@ -20,6 +25,7 @@
 
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
+
         render();
     };
 
@@ -51,13 +57,13 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li 
-                ${task.done ? "style=\"text-decoration: line-through\"" : ""}
+                <li class = "list__item ${task.done ? "list__item--done" : ""}"
                 >
-                <button class = "js-done">zrobione?</button>
-                <button class = "js-remove">usuń</button>
+                <button class = "js-done list__item--done">zrobione?</button>
+                <button class = "js-remove list__item--remove">usuń</button>
                     ${task.content}
                 </li>
+                
                 `;
         };
 
